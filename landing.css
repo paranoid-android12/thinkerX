@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
 }
@@ -45,14 +49,53 @@ body {
 }
 
 .price {
-    
+    margin: 0;
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.upTo {
+    margin: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.timerClaimButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.claim {
+    color: #862282;
+    text-decoration: none;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+.claim:hover {
+    color: white;
+    background-color: #862282;
+}
+
+.pesos {
+    font-size: 0.1;
 }
 
 .cardsBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 90px;
 }
 
@@ -283,24 +326,57 @@ body {
     flex-direction: column;
 }
 
+.digitalImg {
+    width: auto;
+    height: 22rem;
+}
+
 .digitalTitle {
     color: black;
     font-family: Inter;
-    font-size: 3.3rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: bold;
+    padding: 1rem;
+}
+
+.checkTextCont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .textSeparator {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+
+.digitalPhone {
+    position: absolute;
+    left: 10%;
+    width: auto;
+    height: 15rem;
+}
+
+.digitalForm {
+    position: absolute;
+    left: 70%;
+    width: auto;
+    height: 20rem;
 }
 
 .digitalTextCont {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.digitalText {
+    width: 700px;
+    font-family: inter;
 }
 
 .anyProgram {
@@ -372,7 +448,7 @@ li a {
 
 .countdown {
     font-size: 24px;
-    margin-bottom: 20px;
     color: white;
     font-family: inter;
-  }
+
+}
