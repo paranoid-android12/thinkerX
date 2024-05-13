@@ -9,17 +9,34 @@
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logoCont">
+                <a class="logoTxt" href="#"><img class="navLogoImg" src="./assets/ThinkerX Header.svg" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="#cardsBox">Services</a></li>
+                <li><a href="#protagonistBox">Our Team</a></li>
+                <li><a href="#digitalBox">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="blackBoxTitle">
         <div>
             <img class="mainLogo" src="./assets/Logo.svg">
         </div>
         <div class="titleCont">
-            <p class="title">Pioneering Ideas</p>
-            <p class="title">Creating <span style="color: #862282;">Solutions</span></p>
+            <p class="title">Pioneering Ideas.</p>
+            <p class="title">Creating <span style="color: #862282;">Solutions.</span></p>
+            <p class="description">We're a compact team specializing in software development, web design, and graphic design, committed to delivering quality and customized services.</p>
+            <p class="price"><span class="pesos">₱</span>9.99</p>
+            <div class="countdown" id="countdown"></div>
         </div>
     </div>
 
-    <div class="cardsBox">
+    <div class="cardsBox" id="cardsBox">
         <div class="cardCont">
 
             <div class="oddCard">
@@ -61,7 +78,7 @@
 
     </div>
 
-    <div class="servicesBox">
+    <div class="servicesBox" id="servicesBox">
         <div class="serviceTitleCont">
             <p class="serviceTitle">Services</p>
         </div>
@@ -94,7 +111,7 @@
         
     </div>
 
-    <div class="protagonistBox">
+    <div class="protagonistBox" id="protagonistBox">
         <p style="font-family: DM Serif Display; color: white; font-size: 4rem; margin: 0px;">Meet the Protagonist(s)</p>
         <p style="font-family: IBM Plex Sans; font-weight: 100; color: white; font-size: 1.2rem; margin: 30px;">Get insights from nerds across all fields and industries.</p>
         <div class="protagonistRowCont">
@@ -133,7 +150,7 @@
         </div>
     </div>
 
-    <div class="digitalBox">
+    <div class="digitalBox" id="digitalBox">
 
         <p class="digitalTitle">Digital Solutions</p>
 
@@ -190,6 +207,7 @@
         </div>
 
     </div>
+    <script src="landing.js"></script>
 </body>
 
 </html>
