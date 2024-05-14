@@ -12,64 +12,98 @@
 
 <body>
 
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logoCont">
+                <a class="logoTxt" href="../landing.html"><img class="navLogoImg" src="../assets/ThinkerX Header.svg" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
     <div class="selectPackageSegment">
         <div class="borderBox">
             <p style="font-size: 5rem; margin-top: 60px;" class="defaultText">Almost Done!</p>
-            <p class="defaultTextIbm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit.</p>
+            <p class="defaultTextIbm" id="selectedPlan">Selected: Standard</p>
             <p style="font-size: 2rem; margin-top: 40px; margin-bottom: 40px;" class="defaultText">1. Select a Package</p>
 
             <div class="packageContainer">
                 <div class="package" id="sel1">
                     <div class="packageSelector" id="circ1"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Teams</p>
-                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱499.99</p>
+                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;" id="teamsPrice">₱499.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
                     <p class="defaultText" style="font-weight: lighter; margin: 10px;">Valid until 6/19/2024</p>
 
-                    <div style="display: flex; flex-direction: row;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px;">Magikazam!</p>
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="teamsBenefit1">200 GB NVMe Storage</p>
                     </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="teamsBenefit3">SSL Security</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="teamsBenefit4">Unlimited Bandwith Limit</p>
+                    </div>
+                    
                 </div>
 
                 <div class="package" id="sel2">
                     <div class="packageSelector"  id="circ2"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Business</p>
-                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱999.99</p>
+                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;" id="businessPrice">₱999.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
                     <p class="defaultText" style="font-weight: lighter; margin: 10px;">Valid until 6/19/2024</p>
 
-                    <div style="display: flex; flex-direction: row;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px;">Magikazam!</p>
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="businessBenefit1">200 GB NVMe Storage</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="businessBenefit2">(1) Free Domain Name</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="businessBenefit3">SSL Security</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="businessBenefit4">Unlimited Bandwith Limit</p>
                     </div>
                 </div>
 
                 <div class="package" id="sel3">
                     <div class="packageSelector"  id="circ3"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Corporation</p>
-                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱2,999.99</p>
+                    <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;" id="corporationPrice">₱2,999.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
                     <p class="defaultText" style="font-weight: lighter; margin: 10px;">Valid until 6/19/2024</p>
 
                     <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;">200 GB NVMe Storage</p>
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="corporationBenefit1">200 GB NVMe Storage</p>
                     </div>
 
                     <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;">(1) Free Domain Name</p>
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="corporationBenefit2">(1) Free Domain Name</p>
                     </div>
 
                     <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;">SSL Security</p>
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="corporationBenefit3">SSL Security</p>
                     </div>
 
                     <div style="display: flex; flex-direction: row; width: 100%; margin: 6px; align-items: center;">
-                        <img src="/assets/check.svg" style="height: 12px;"> 
-                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;">Unlimited Bandwith Limit</p>
+                        <img src="../assets/check.svg" style="height: 12px;"> 
+                        <p class="defaultText" style="font-weight: 200; margin-left: 10px; font-size: 0.7rem;" id="corporationBenefit4">Unlimited Bandwith Limit</p>
                     </div>
                     
                 </div>
@@ -90,17 +124,17 @@
                         <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
                             <div id="payOp1" class="paymentOption">
                                 <div id="pay1" class="selector"></div>
-                                <img class="payImage" src="/assets/paypal.svg">
+                                <img class="payImage" src="../assets/paypal.svg">
                             </div>
     
                             <div id="payOp2" class="paymentOption">
                                 <div id="pay2" class="selector"></div>
-                                <img class="payImage" src="/assets/gcash.svg">
+                                <img class="payImage" src="../assets/gcash.svg">
                             </div>
     
                             <div id="payOp3" class="paymentOption">
                                 <div id="pay3" class="selector"></div>
-                                <img class="payImage" src="/assets/paymaya.svg">
+                                <img class="payImage" src="../assets/paymaya.svg">
                             </div>
                         </div>
                     </div>
@@ -110,8 +144,8 @@
 
     
                         <div style="width: 100%; display: flex; flex-direction: column;">
-                            <input class="fullInput" placeholder="Email">
-                            <input class="fullInput" placeholder="Phone Number">
+                            <input class="fullInput" placeholder="Email" required>
+                            <input class="fullInput" placeholder="Phone Number" required>
                         </div>
                     </div>
 
@@ -120,8 +154,8 @@
 
     
                         <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
-                            <input style="flex: 1 1 0%; margin-right: 2px;" class="fullInput" placeholder="First Name">
-                            <input style="flex: 1 1 0%; margin-left: 2px;"  class="fullInput" placeholder="Last Name">
+                            <input style="flex: 1 1 0%; margin-right: 2px;" class="fullInput" placeholder="First Name" required>
+                            <input style="flex: 1 1 0%; margin-left: 2px;"  class="fullInput" placeholder="Last Name" required>
                         </div>
 
                         <div style="width: 100%; display: flex; flex-direction: column;">
@@ -129,13 +163,13 @@
                         </div>
 
                         <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
-                            <input style="flex: 1 1 0%; margin: 2px; margin-left: 0px;" class="fullInput" placeholder="City">
-                            <input style="flex: 1 1 0%; margin: 2px;"  class="fullInput" placeholder="Country">
-                            <input style="flex: 1 1 0%; margin: 2px; margin-right: 0px;"  class="fullInput" placeholder="Province">
+                            <input style="flex: 1 1 0%; margin: 2px; margin-left: 0px;" class="fullInput" placeholder="City" required>
+                            <input style="flex: 1 1 0%; margin: 2px;"  class="fullInput" placeholder="Country" required>
+                            <input style="flex: 1 1 0%; margin: 2px; margin-right: 0px;"  class="fullInput" placeholder="Province" required>
                         </div>
 
                         <div style="width: 100%; display: flex; flex-direction: row; justify-content: end; margin-top: 8px;">
-                            <button class="submitButton">Checkout</button>
+                            <button class="submitButton" type="submit">Checkout</button>
                         </div>
 
                     </div>
@@ -170,7 +204,7 @@
             </div>
         </div>
     </div>
-    <script src="/checkout/checkout.js"></script>
+    <script src="./checkout.js"></script>
 </body>
 
 </html>
