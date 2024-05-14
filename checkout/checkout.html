@@ -12,9 +12,17 @@
 
 <body>
 
+    <div id="checkoutConfirm" class="modal">
+        <div class="modalContent">
+            <p class="defaultText" style="color: black; font-size: 1.8rem;">Checkout Successful!</p>
+            <p class="defaultText" style="color: black; font-size: 0.8rem; font-weight: 300;">You've successfully bought this package.</p>
+            <button id="confirm" class="submitButton" style="margin: 30px; margin-bottom: 0px;">OK</button>
+        </div>
+    </div>
     <div class="selectPackageSegment">
         <div class="borderBox">
-            <p style="font-size: 5rem; margin-top: 60px;" class="defaultText">Almost Done!</p>
+            <img onclick="location.href='../landing.html'" class="back" style="margin-top: 30px;; height: 40px;" src="/assets/arrow.svg">
+            <p style="font-size: 5rem;" class="defaultText">Almost Done!</p>
             <p class="defaultTextIbm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit.</p>
             <p style="font-size: 2rem; margin-top: 40px; margin-bottom: 40px;" class="defaultText">1. Select a Package</p>
 
@@ -105,40 +113,42 @@
                         </div>
                     </div>
 
-                    <div class="formSegment">
-                        <p class="formTitle">Contact Information</p>
-
+                    <form id="mainForm">
+                        <div class="formSegment">
+                            <p class="formTitle">Contact Information</p>
     
-                        <div style="width: 100%; display: flex; flex-direction: column;">
-                            <input class="fullInput" placeholder="Email">
-                            <input class="fullInput" placeholder="Phone Number">
+        
+                            <div style="width: 100%; display: flex; flex-direction: column;">
+                                <input required type="email" class="fullInput" placeholder="Email">
+                                <input required class="fullInput" placeholder="Phone Number">
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="formSegment" style="margin-bottom: 0px;">
-                        <p class="formTitle">Shipping Address</p>
-
     
-                        <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
-                            <input style="flex: 1 1 0%; margin-right: 2px;" class="fullInput" placeholder="First Name">
-                            <input style="flex: 1 1 0%; margin-left: 2px;"  class="fullInput" placeholder="Last Name">
+                        <div class="formSegment" style="margin-bottom: 0px;">
+                            <p class="formTitle">Shipping Address</p>
+    
+        
+                            <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+                                <input required style="flex: 1 1 0%; margin-right: 2px;" class="fullInput" placeholder="First Name">
+                                <input required style="flex: 1 1 0%; margin-left: 2px;"  class="fullInput" placeholder="Last Name">
+                            </div>
+    
+                            <div style="width: 100%; display: flex; flex-direction: column;">
+                                <input required class="fullInput" placeholder="Address">
+                            </div>
+    
+                            <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+                                <input required style="flex: 1 1 0%; margin: 2px; margin-left: 0px;" class="fullInput" placeholder="City">
+                                <input required style="flex: 1 1 0%; margin: 2px;"  class="fullInput" placeholder="Country">
+                                <input required style="flex: 1 1 0%; margin: 2px; margin-right: 0px;"  class="fullInput" placeholder="Province">
+                            </div>
+    
+                            <div style="width: 100%; display: flex; flex-direction: row; justify-content: end; margin-top: 8px;">
+                                <button id="submit" type="submit" class="submitButton">Checkout</button>
+                            </div>
+    
                         </div>
-
-                        <div style="width: 100%; display: flex; flex-direction: column;">
-                            <input class="fullInput" placeholder="Address">
-                        </div>
-
-                        <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
-                            <input style="flex: 1 1 0%; margin: 2px; margin-left: 0px;" class="fullInput" placeholder="City">
-                            <input style="flex: 1 1 0%; margin: 2px;"  class="fullInput" placeholder="Country">
-                            <input style="flex: 1 1 0%; margin: 2px; margin-right: 0px;"  class="fullInput" placeholder="Province">
-                        </div>
-
-                        <div style="width: 100%; display: flex; flex-direction: row; justify-content: end; margin-top: 8px;">
-                            <button class="submitButton">Checkout</button>
-                        </div>
-
-                    </div>
+                    </form>
 
                 </div>
                 <div class="paymentSummary">

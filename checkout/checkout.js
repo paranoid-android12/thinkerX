@@ -13,7 +13,10 @@ window.onload = function(){
     let pay1 = document.getElementById('pay1');
     let pay2 = document.getElementById('pay2');
     let pay3 = document.getElementById('pay3');
-    
+
+    let btn = document.getElementById('submit');
+    let modal = document.getElementById('checkoutConfirm');
+    let closer = document.getElementById('confirm');
     
     function changeSelPackage() {
         switch (selected) {
@@ -112,4 +115,15 @@ window.onload = function(){
         finalPrice.innerHTML = '₱' + (2999.99 + (2999.99 * 0.12)).toFixed(2);
         changeSelPackage();
     });
+
+    document.getElementById('mainForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        modal.style.display = "flex";
+
+    });
+
+    closer.onclick = function() {
+        modal.style.display = "none";
+        window.location.href = "../landing.html"
+    }
 }
