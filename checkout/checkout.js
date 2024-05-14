@@ -1,6 +1,7 @@
 window.onload = function(){
 
     let selected = '' ;
+    let payMethod = '';
     let selPack = document.getElementById('selectedPackage');
     let packPrice = document.getElementById('packagePrice');
     let taxes = document.getElementById('tax');
@@ -8,6 +9,11 @@ window.onload = function(){
     let circ1 = document.getElementById('circ1');
     let circ2 = document.getElementById('circ2');
     let circ3 = document.getElementById('circ3');
+
+    let pay1 = document.getElementById('pay1');
+    let pay2 = document.getElementById('pay2');
+    let pay3 = document.getElementById('pay3');
+    
     
     function changeSelPackage() {
         switch (selected) {
@@ -33,6 +39,52 @@ window.onload = function(){
                 break;
         }
     }
+
+    function changePay() {
+        switch (payMethod) {
+            case 'PayPal':
+                pay1.style.backgroundColor="#862282";
+                pay2.style.backgroundColor="white";
+                pay3.style.backgroundColor="white";
+                break;
+
+            case 'GCash':
+                pay1.style.backgroundColor="white";
+                pay2.style.backgroundColor="#862282";
+                pay3.style.backgroundColor="white";
+                break;
+
+            case 'Pay Maya':
+                pay1.style.backgroundColor="white";
+                pay2.style.backgroundColor="white";
+                pay3.style.backgroundColor="#862282";
+                break;
+        
+            default:
+                break;
+        }
+    }
+
+    document.getElementById('payOp1').addEventListener('click', function() {
+        payMethod = 'PayPal';
+        pay1.style.backgroundColor="#862282";
+        pay2.style.backgroundColor="white";
+        pay3.style.backgroundColor="white";
+    });
+
+    document.getElementById('payOp2').addEventListener('click', function() {
+        payMethod = 'GCash';
+        pay1.style.backgroundColor="white";
+        pay2.style.backgroundColor="#862282";
+        pay3.style.backgroundColor="white";
+    });
+
+    document.getElementById('payOp3').addEventListener('click', function() {
+        payMethod = 'Pay Maya';
+        pay1.style.backgroundColor="white";
+        pay2.style.backgroundColor="white";
+        pay3.style.backgroundColor="#862282";
+    });
     
     document.getElementById('sel1').addEventListener('click', function() {
         selected = 'circ1';
