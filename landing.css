@@ -111,8 +111,8 @@ body {
 }
 
 .oddCard {
-    height: 100%;
-    width: 380px;
+    height: 80%;
+    width: 310px;
     padding-top: 10px;
     padding-bottom: 30px;
     background-color: #171717;
@@ -176,10 +176,10 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    right: 18rem;
-    top: 3.8rem;
+    right: 15rem;
+    top: 6rem;
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 .text1 {
@@ -187,12 +187,12 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     font-family: IBM Plex Sans;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     width: 15rem;
-    top: 3.7rem;
-    left: 7rem;
+    top: 5.8rem;
+    left: 5rem;
 
 }
 
@@ -200,10 +200,10 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    right: 18rem;
+    right: 15rem;
     top: 8.8rem;
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 .text2 {
@@ -211,22 +211,22 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     font-family: IBM Plex Sans;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     width: 15rem;
     top: 8.7rem;
-    left: 7rem;
+    left: 5rem;
 }
 
 .oddImg3 {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    right: 18rem;
-    top: 13.8rem;
+    right: 15rem;
+    top: 11.8rem;
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 .text3 {
@@ -234,22 +234,22 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     font-family: IBM Plex Sans;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     width: 15rem;
-    top: 13.7rem;
-    left: 7rem;
+    top: 11.7rem;
+    left: 5rem;
 }
 
 .oddImg4 {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    right: 18rem;
-    top: 19.6rem;
+    right: 15rem;
+    top: 14.6rem;
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 .text4 {
@@ -257,22 +257,22 @@ body {
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     font-family: IBM Plex Sans;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: white;
     margin: 0;
     width: 15rem;
-    top: 18.7rem;
-    left: 7rem;
+    top: 14.7rem;
+    left: 5rem;
 }
 
 .oddImg5 {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    right: 18rem;
-    top: 18.8rem;
+    right: 15rem;
+    top: 14.8rem;
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 
@@ -291,7 +291,7 @@ body {
 .oddServiceTitle {
     font-family: Inter;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: white;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     text-align: center;
@@ -302,7 +302,7 @@ body {
     margin: 0;
     font-family: IBM Plex Sans;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     flex-grow: 1;
     color: white;
     text-align: center;
@@ -479,16 +479,16 @@ body {
 
 .digitalPhone {
     position: absolute;
-    left: 10%;
+    left: 3%;
     width: auto;
-    height: 15rem;
+    height: 10rem;
 }
 
 .digitalForm {
     position: absolute;
-    left: 70%;
+    right: 3%;
     width: auto;
-    height: 20rem;
+    height: 14rem;
 }
 
 .digitalTextCont {
@@ -556,7 +556,7 @@ li a {
 
 .navLogoImg {
     width: auto;
-    height: 2rem;
+    height: 1.1rem;
 }
 
 .logoCont {
