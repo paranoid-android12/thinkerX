@@ -20,3 +20,18 @@ function startCountdown(countdownDate, targetElementId) {
 
 const countdownDate = new Date('2024-05-17T00:00:00').getTime();
 startCountdown(countdownDate, 'countdown');
+
+function standard() {
+    location.href='./checkout/checkout.html'
+    localStorage.setItem('package', 'standard');
+}
+
+function business() {
+    location.href='./checkout/checkout.html'
+    localStorage.setItem('package', 'business');
+}
+
+function premium() {
+    location.href='./checkout/checkout.html'
+    localStorage.setItem('package', 'premium');
+}

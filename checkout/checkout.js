@@ -1,3 +1,44 @@
+const data = {
+    "standard": {
+        teamsPrice: 299.99,
+        businessPrice: 599.99,
+        corporationPrice: 1999.99,
+        teamsBenefit1: "20 GB NVMe Storage",
+        businessBenefit1: "40 GB NVMe Storage",
+        corporationBenefit1: "60 GB NVMe Storage",
+        selectedPlan: "Selected Plan: Standard"
+    },
+    "business": {
+        teamsPrice: 399.99,
+        businessPrice: 799.99,
+        corporationPrice: 2499.99,
+        teamsBenefit1: "40 GB NVMe Storage",
+        businessBenefit1: "80 GB NVMe Storage",
+        corporationBenefit1: "120 GB NVMe Storage",
+        selectedPlan: "Selected Plan: Business"
+    },
+    "premium": {
+        teamsPrice: 499.99,
+        businessPrice: 999.99,
+        corporationPrice: 2999.99,
+        teamsBenefit1: "60 GB NVMe Storage",
+        businessBenefit1: "100 GB NVMe Storage",
+        corporationBenefit1: "200 GB NVMe Storage",
+        selectedPlan: "Selected Plan: Premium"
+    }
+}
+
+const inputs = document.querySelectorAll('.fullInput');
+const submitButton = document.querySelector('.submitButton');
+
+inputs.forEach(input => {
+  input.addEventListener('input', () => {
+    const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+    submitButton.disabled = !allFilled;
+  });
+});
+
+
 window.onload = function(){
 
     let selected = '' ;
@@ -18,6 +59,26 @@ window.onload = function(){
     let modal = document.getElementById('checkoutConfirm');
     let closer = document.getElementById('confirm');
     
+    let package = localStorage.getItem('package');
+
+    let teamsPrice = document.getElementById('teamsPrice');
+    let businessPrice = document.getElementById('businessPrice');
+    let corporationPrice = document.getElementById('corporationPrice');
+    let teamsBenefit1 = document.getElementById('teamsBenefit1');
+    let businessBenefit1 = document.getElementById('businessBenefit1');
+    let corporationBenefit1 = document.getElementById('corporationBenefit1');
+    let selectedPlan = document.getElementById('selectedPlan');
+
+    teamsPrice.innerHTML = `₱${data[package].teamsPrice}`;
+    businessPrice.innerHTML = `₱${data[package].businessPrice}`;
+    corporationPrice.innerHTML = `₱${data[package].corporationPrice}`;
+    teamsBenefit1.innerHTML = `${data[package].teamsBenefit1}`;
+    businessBenefit1.innerHTML = `${data[package].businessBenefit1}`;
+    corporationBenefit1.innerHTML = `${data[package].corporationBenefit1}`;
+    selectedPlan.innerHTML = `${data[package].selectedPlan}`;
+
+    
+
     function changeSelPackage() {
         switch (selected) {
             case 'circ1':
@@ -92,27 +153,27 @@ window.onload = function(){
     document.getElementById('sel1').addEventListener('click', function() {
         selected = 'circ1';
         selPack.innerHTML = 'Team Package';
-        packPrice.innerHTML = '₱499.99';
-        taxes.innerHTML = '₱' + (499.99 * 0.12).toFixed(2); // Calculating taxes
-        finalPrice.innerHTML = '₱' + (499.99 + (499.99 * 0.12)).toFixed(2); // Calculating final price
+        packPrice.innerHTML = `₱${data[package].teamsPrice}`;
+        taxes.innerHTML = '₱' + (data[package].teamsPrice * 0.12).toFixed(2); // Calculating taxes
+        finalPrice.innerHTML = '₱' + (data[package].teamsPrice + (data[package].teamsPrice * 0.12)).toFixed(2); // Calculating final price
         changeSelPackage();
     });
 
     document.getElementById('sel2').addEventListener('click', function() {
         selected = 'circ2';
         selPack.innerHTML = 'Business Package';
-        packPrice.innerHTML = '₱999.99';
-        taxes.innerHTML = '₱' + (999.99 * 0.12).toFixed(2);
-        finalPrice.innerHTML = '₱' + (999.99 + (999.99 * 0.12)).toFixed(2);
+        packPrice.innerHTML = `₱${data[package].businessPrice}`;
+        taxes.innerHTML = '₱' + (data[package].businessPrice * 0.12).toFixed(2);
+        finalPrice.innerHTML = '₱' + (data[package].businessPrice + (data[package].businessPrice * 0.12)).toFixed(2);
         changeSelPackage();
     });
 
     document.getElementById('sel3').addEventListener('click', function() {
         selected = 'circ3';
         selPack.innerHTML = 'Corporate Package';
-        packPrice.innerHTML = '₱2,999.99';
-        taxes.innerHTML = '₱' + (2999.99 * 0.12).toFixed(2);
-        finalPrice.innerHTML = '₱' + (2999.99 + (2999.99 * 0.12)).toFixed(2);
+        packPrice.innerHTML = `₱${data[package].corporationPrice}`;
+        taxes.innerHTML = '₱' + (data[package].corporationPrice * 0.12).toFixed(2);
+        finalPrice.innerHTML = '₱' + (data[package].corporationPrice + (data[package].corporationPrice * 0.12)).toFixed(2);
         changeSelPackage();
     });
 
