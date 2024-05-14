@@ -80,9 +80,12 @@ body {
     border-radius: 30px;
     font-family: Inter;
     font-weight: bold;
+    transition: 0.3s
 }
 
+
 .claim:hover {
+
     color: white;
     background-color: #862282;
 }
@@ -100,16 +103,16 @@ body {
 }
 
 .cardCont {
-    height: 360px;
+    height: 460px;
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .oddCard {
     height: 100%;
-    width: 300px;
+    width: 380px;
     padding-top: 10px;
     padding-bottom: 30px;
     background-color: #171717;
@@ -147,28 +150,140 @@ body {
     transition: opacity 0.2s;
 }
 
-.price3 {
-    visibility: hidden;
-    /* Initially hide the element */
+.oddCard:hover .oddServicePrice {
     opacity: 0;
-    /* Initially set opacity to 0 */
-    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
-    /* Apply transition effect on opacity */
-    font-family: DM Serif Display;
-    font-weight: normal;
-    font-size: 4.5rem;
-    color: white;
-    position: absolute;
-    line-height: 3rem;
+    /* Make it fully visible */
+    transition: opacity 0.2s;
 }
 
-.oddCard:hover .price3 {
+.oddCard {
+    position: relative;
+}
+
+.oddImg1,
+.oddImg2,
+.oddImg3,
+.oddImg4,
+.oddImg5,
+.text1,
+.text2,
+.text3,
+.text4 {
+    position: absolute;
+}
+
+.oddImg1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    right: 18rem;
+    top: 3.8rem;
+    width: auto;
+    height: 2rem;
+}
+
+.text1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    font-family: IBM Plex Sans;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+    width: 15rem;
+    top: 3.7rem;
+    left: 7rem;
+
+}
+
+.oddImg2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    right: 18rem;
+    top: 8.8rem;
+    width: auto;
+    height: 2rem;
+}
+
+.text2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    font-family: IBM Plex Sans;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+    width: 15rem;
+    top: 8.7rem;
+    left: 7rem;
+}
+
+.oddImg3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    right: 18rem;
+    top: 13.8rem;
+    width: auto;
+    height: 2rem;
+}
+
+.text3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    font-family: IBM Plex Sans;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+    width: 15rem;
+    top: 13.7rem;
+    left: 7rem;
+}
+
+.oddImg4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    right: 18rem;
+    top: 19.6rem;
+    width: auto;
+    height: 2rem;
+}
+
+.text4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    font-family: IBM Plex Sans;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+    width: 15rem;
+    top: 18.7rem;
+    left: 7rem;
+}
+
+.oddImg5 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    right: 18rem;
+    top: 18.8rem;
+    width: auto;
+    height: 2rem;
+}
+
+
+.oddCard:hover .text1,
+.oddCard:hover .text2,
+.oddCard:hover .text3,
+.oddCard:hover .text4,
+.oddCard:hover img {
     visibility: visible;
-    /* Make it visible on hover */
     opacity: 1;
-    /* Make it fully visible */
     transition-delay: 0s;
-    /* Reset transition delay */
 }
 
 
@@ -176,22 +291,31 @@ body {
 .oddServiceTitle {
     font-family: Inter;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+    text-align: center;
     /* Apply transition effect on opacity */
 }
 
 .oddServiceDetails {
+    margin: 0;
     font-family: IBM Plex Sans;
-    font-weight: normal;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     flex-grow: 1;
     color: white;
     text-align: center;
     width: 80%;
     transition: opacity 0.4s ease, visibility 0s linear 0.4s;
     /* Apply transition effect on opacity */
+}
+
+.oddServicePrice {
+    font-family: DM Serif Display;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
 }
 
 .oddSwitch {
@@ -451,4 +575,59 @@ li a {
     color: white;
     font-family: inter;
 
+}
+
+.footerCont {
+    background-color: white;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contactCont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 417.42px;
+}
+
+.footerImgCont {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+    padding-right: 5rem;
+}
+
+.footerImg {
+    width: auto;
+    height: 7rem;
+}
+
+.footerContact {
+    font-family: IBM Plex Sans;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footerContactInfo {
+    margin: 0;
+    text-align: left;
+    width: 55%;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+}
+
+.footerContactCopyright {
+    margin-top: 2rem;
+    text-align: left;
+    width: 55%;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
 }

@@ -18,6 +18,6 @@ function startCountdown(countdownDate, targetElementId) {
     }, 1000);
 }
 
-const countdownDate = new Date('2024-06-01T00:00:00').getTime();
+const countdownDate = new Date('2024-05-17T00:00:00').getTime();
 startCountdown(countdownDate, 'countdown');
 
