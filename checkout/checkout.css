@@ -58,10 +58,16 @@ body {
     flex-direction: column;
     align-items: center;
     transition-duration: 0.3s;
+    position: relative;
 }
 
 .package:hover{
     scale: 103%;
+    transition-duration: 0.3s;
+}
+
+.package:hover .packageSelector{
+    background-color: #862282;
     transition-duration: 0.3s;
 }
 
@@ -104,6 +110,18 @@ body {
 }
 
 .selector{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #A6A6A6;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.packageSelector{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition-duration: 0.3s;
     width: 10px;
     height: 10px;
     border: 2px solid #A6A6A6;
