@@ -126,6 +126,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .oddCard:hover {

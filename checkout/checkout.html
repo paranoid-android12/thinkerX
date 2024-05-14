@@ -2,13 +2,16 @@
 <html>
 
 <head>
+    
     <link rel="stylesheet" href="checkout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <div class="selectPackageSegment">
         <div class="borderBox">
             <p style="font-size: 5rem; margin-top: 60px;" class="defaultText">Almost Done!</p>
@@ -16,8 +19,8 @@
             <p style="font-size: 2rem; margin-top: 40px; margin-bottom: 40px;" class="defaultText">1. Select a Package</p>
 
             <div class="packageContainer">
-                <div class="package">
-                    <div class="packageSelector" id="sel1"></div>
+                <div class="package" id="sel1">
+                    <div class="packageSelector" id="circ1"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Teams</p>
                     <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱499.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
@@ -29,8 +32,8 @@
                     </div>
                 </div>
 
-                <div class="package">
-                    <div class="packageSelector" id="sel2"></div>
+                <div class="package" id="sel2">
+                    <div class="packageSelector"  id="circ2"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Business</p>
                     <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱999.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
@@ -42,8 +45,8 @@
                     </div>
                 </div>
 
-                <div class="package">
-                    <div class="packageSelector" id="sel3"></div>
+                <div class="package" id="sel3">
+                    <div class="packageSelector"  id="circ3"></div>
                     <p class="defaultText" style="font-weight: semibold; font-size: 1.4rem;">For Corporation</p>
                     <p class="defaultText" style="font-size: 2.3rem; font-weight: semibold; margin: 15px;">₱2,999.99</p>
                     <p class="defaultText" style="font-style: italic; font-weight: lighter; font-size: 1.2rem;">/month</p>
@@ -140,9 +143,9 @@
                 </div>
                 <div class="paymentSummary">
                     <p class="defaultText" style="color: black; font-weight: 500; margin-bottom: 8px;">Order Summary</p>
-                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                        <p class="defaultText" style="color: black; font-size: 0.7rem;">Corporation Package</p>
-                        <p class="defaultText" style="color: black; font-size: 0.7rem;">₱99.99</p>
+                    <div  style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <p id="selectedPackage" class="defaultText" style="color: black; font-size: 0.7rem;">Corporation Package</p>
+                        <p id="packagePrice" class="defaultText" style="color: black; font-size: 0.7rem;">₱99.99</p>
                     </div>
                     <hr>
 
@@ -152,21 +155,22 @@
                     </div>
 
                     <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                        <p class="defaultText" style="color: black; font-size: 0.7rem; font-weight: 300;">100GB SSD Cloud API Storage</p>
-                        <p class="defaultText" style="color: black; font-size: 0.7rem; font-weight: 300;">₱399.99</p>
+                        <p class="defaultText" style="color: black; font-size: 0.7rem; font-weight: 300;">Vat 12%</p>
+                        <p id="tax" class="defaultText" style="color: black; font-size: 0.7rem; font-weight: 300;">₱399.99</p>
                     </div>
 
                     <hr>
 
                     <div style="display: flex; flex-direction: row; justify-content: space-between;">
                         <p class="defaultText" style="color: black; font-size: 1.2rem; font-weight: bold;">Total:</p>
-                        <p class="defaultText" style="color: black; font-size: 1.2rem; font-weight: bold;">₱399.99</p>
+                        <p id="finPrice" class="defaultText" style="color: black; font-size: 1.2rem; font-weight: bold;">₱399.99</p>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
+    <script src="/checkout/checkout.js"></script>
 </body>
 
 </html>

@@ -20,15 +20,3 @@ function startCountdown(countdownDate, targetElementId) {
 
 const countdownDate = new Date('2024-05-17T00:00:00').getTime();
 startCountdown(countdownDate, 'countdown');
-
-document.getElementById('checkouter').onclick = function() {
-    window.open('https://www.youtube.com/watch?v=q-Y0bnx6Ndw', '_blank');
-}
-
-document.getElementById('checkouter2').onclick = function() {
-    window.open('https://www.youtube.com/watch?v=q-Y0bnx6Ndw', '_blank');
-}
-
-document.getElementById('checkouter3').onclick = function() {
-    window.open('https://www.youtube.com/watch?v=q-Y0bnx6Ndw', '_blank');
-}
