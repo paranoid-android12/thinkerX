@@ -68,7 +68,7 @@ window.onload = function(){
     let businessBenefit1 = document.getElementById('businessBenefit1');
     let corporationBenefit1 = document.getElementById('corporationBenefit1');
     let selectedPlan = document.getElementById('selectedPlan');
-
+    
     teamsPrice.innerHTML = `₱${data[package].teamsPrice}`;
     businessPrice.innerHTML = `₱${data[package].businessPrice}`;
     corporationPrice.innerHTML = `₱${data[package].corporationPrice}`;
