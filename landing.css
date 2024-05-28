@@ -5,9 +5,9 @@ html {
 body {
     margin: 0px;
     overflow-x: hidden;
-    /* @media screen and (max-width: 930px) {
-        width: 930px;
-    } */
+    @media screen and (max-width: 930px) {
+        width: 100%;
+    }
 }
 
 .navItems {
@@ -68,7 +68,7 @@ nav ul li a {
 
 .titleCont {
     @media screen and (max-width: 930px) {
-        width: 930px;
+        width: 90%;
         align-items: center;
         text-align: center;
         gap: 10px;
@@ -99,7 +99,7 @@ nav ul li a {
 .description {
     @media screen and (max-width: 930px) {
         font-size: 1rem;
-        width: 80%;
+        width: 90%;
         text-align: center;
         overflow-wrap: break-word;
     }
